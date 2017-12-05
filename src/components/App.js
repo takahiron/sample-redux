@@ -3,7 +3,6 @@ import React from 'react'
 let input
 export default class App extends React.Component {
   render () {
-console.log("components/App")
     return (
       <div>
         <form onSubmit={e => {
@@ -12,7 +11,6 @@ console.log("components/App")
             return
           }
           this.props.onClickAdd(input.value)
-console.log(input.value)
           input.value = ""
         }}>
          <input ref={node =>{
